@@ -1,0 +1,20 @@
+﻿<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Alias</td>
+            <td>Id:</td>
+            <td>Country Id:</td>
+            <td>&nbsp;</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="itm in states.items">
+            <td>{{itm.Name}}</td>
+            <td>{{itm.StateProvinceCode}}</td>
+            <td>{{itm.Id}}</td>
+            <td>{{itm.CountryId}}</td>
+            <td><button class="btn btn-default" ng-click="states.edit(itm)">Edit</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,10 @@
+﻿<div data-ng-controller="auth as a">
+
+    <form id="authForm">
+        <br />
+        <input type="text" ng-model="a.loginData.userName" id="username" placeholder="Enter username" />
+        <input type="text" ng-model="a.loginData.password" id="password" placeholder="Enter password" />
+        <button type="button" class="btn btn-primary" ng-click="a.login()">Sign In</button>
+        <button type="button" class="btn btn-danger" ng-click="a.logout()">Log Out</button>
+    </form>
+    </div>

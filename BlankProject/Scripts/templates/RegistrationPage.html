@@ -1,0 +1,41 @@
+﻿
+<div data-ng-controller="registration as reg">
+    <div class="signup__container">
+        <div class="container__child signup__form">
+            <form action="#">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input ng-model="reg.user.firstName"class="form-control" type="text" name="firstname" id="firstname" placeholder="Enter First Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input ng-model="reg.user.lastName" class="form-control" type="text" name="lastname" id="lastname" placeholder="Enter Last Name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input ng-model="reg.user.emailAddress" class="form-control" type="text" name="email" id="email" placeholder="JohnDoe@email.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input ng-model="reg.user.password" class="form-control" type="password" name="password" id="password" placeholder="********" required />
+                </div>
+                <div class="form-group">
+                    <label for="passwordRepeat">Repeat Password</label>
+                    <input ng-model="reg.user.confirmPassword" class="form-control" type="password" name="confirmPassword" id="confirmPassword" placeholder="********" required />
+                </div>
+                <div class="m-t-lg">
+                    <ul class="list-inline">
+                        <li>
+                            <input class="btn btn--form" type="submit" value="Register" ng-click="reg.save(reg.user)" />
+                        </li>
+
+                        <li>
+                            <a class="signup__link" ui-sref="regLogin">I am already a member</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

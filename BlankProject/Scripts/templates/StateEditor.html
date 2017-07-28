@@ -1,0 +1,20 @@
+﻿<form name="stateForm">
+    <div class="form-group">
+        <label>State Name</label>
+        <input type="text" ng-model="stateEditor.selectedItem.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>State Alias</label>
+        <input type="text" ng-model="stateEditor.selectedItem.StateProvinceCode"class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>State Id</label>
+        <input type="text" ng-model="stateEditor.selectedItem.Id" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Country Id</label>
+        <input type="text" ng-model="stateEditor.selectedItem.CountryId" class="form-control" />
+    </div>
+
+    <button class="btn btn-default" ng-click="stateEditor.save()">Save</button>
+</form>
